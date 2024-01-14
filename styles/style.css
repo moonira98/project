@@ -1,0 +1,1367 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.cdnfonts.com/css/tt-firs-neue-trl?styles=143109');
+
+
+#main {
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+section {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#for-mobile {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 24px;
+}
+
+ul li {
+    margin-right: 40px;
+}
+
+li a {
+    color: #6F767E;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu-logo img {
+    width: 129px;
+    height: 32px;
+    padding-right: 24px;
+    border-right: 1px solid #D9D9D9;
+}
+
+.header-angle-block {
+    display: flex;
+    align-items: center;
+}
+
+.language-change-part {
+    display: flex;
+    align-items: center;
+    width: 116px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+    margin-right: 24px;
+}
+
+.language-change-part .rus-flag {
+    margin-right: 8px;
+}
+
+.launch-button {
+    width: 121px;
+    height: 48px;
+    background-color: #3E8BF3;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+}
+
+#burger {
+    display: none;
+    margin-left: 24px;
+}
+
+@media only screen and (max-width: 728px) {
+    #main {
+        width: 728px;   
+    }
+    .header {
+        width: 100%;
+        position: relative;
+    }
+    nav {
+        display: none;
+    }
+
+    #for-mobile {
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        width: 162px;
+        display: block;
+        right: 17px;
+        top: 75px;
+        background: white;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 3px -2px 15px -4px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 3px -2px 15px -4px rgba(0,0,0,0.75);
+        box-shadow: 0px -1px 8px -5px rgb(0 0 0 / 75%);
+    }
+    #for-mobile li {
+        margin-bottom: 5px;
+        padding-left: 15px;
+    }
+
+    #burger {
+        display: block;
+    }
+    .menu-logo img {
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #main {
+        width: 320px;  
+    }
+    .header {
+        width: 100%;
+    }
+    
+    
+    .language-change-part {
+        display: none;
+    }
+    #burger {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+    .menu-logo img {
+        width: 97px;
+        height: 24px;
+    }
+    .header-angle-block {
+        width: 142px;
+    }
+    .header-angle-block .launch-button {
+        width: 102px;
+        height: 36px;
+        font-size: 14px;
+    }
+   
+}
+
+.home-block {
+    background-color: #F5F9FE;
+    align-items: center;
+}
+
+.container {
+    max-width: 1224px;
+    margin: auto;
+}
+
+.home-block .container {
+    display: flex;
+}
+
+.title-block {
+    width: 600px;
+    height: 368px;
+    padding-top: 186px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    color: #000000;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+}
+
+.title-block .launch-button {
+    width: 159px;
+    height: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 32px;
+   
+}
+
+.home-document {
+    display: flex;
+    width: 273px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6F767E;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.home-document img {
+    margin-right: 8px;
+}
+
+.calculator-block {
+    position: relative;
+    margin-top: 75px;
+    background-image: url(../images/circle.png);
+    width: 600px;
+    height: 626px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-coin {
+    width: 143px;
+    height: 135px;
+    position: absolute;
+    z-index: 100;
+    left: 26px;
+    top: 27px;
+}
+
+.yellow-coin {
+    z-index: 100;
+    position: absolute;
+    left: 155px;
+    top: 0px;
+}
+
+.strange-coin {
+    position: absolute;
+    z-index: 100;
+    left: 462px;
+    top: 489px;
+}
+
+.calculator-box {
+    position: absolute;
+    width: 455.22px;
+    height: 479.6px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3.9801px rgba(0, 0, 0, 0.04), 0px 7.9602px 15.9204px rgba(0, 0, 0, 0.08);
+    border-radius: 9.30594px;
+}
+
+.calc-intro {
+    padding: 19.19px 159.92px 0px 161.52px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.30594px;
+}
+
+.yan {
+    width: 65.14px;
+    height: 27.92px;
+    background: #000000;
+    border-radius: 6.20396px;
+    color: #FFFFFF;
+    margin-right: 32.18px;
+}
+
+.calc-price-part {
+    margin-top: 46.61px;
+    padding-left: 131.39px;
+    display: flex;
+    align-items: center;
+}
+
+.calc-numbers {
+    margin-right: 85px;
+}
+
+.dollar {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 43.4277px;
+    color: #000000;
+}
+
+.under-dollar {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.8569px;
+    color: #5D5D5B;
+    text-align: center;
+}
+
+.calc-price-part button {
+    width: 40.33px;
+    height: 40.33px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #D9D9D9;
+}
+
+.form {
+    margin: 45.77px 18.28px 0px 19.72px;
+    border-radius: 12.4079px;
+    background: #F5F9FE;
+    width: 417.22px;
+    height: 189.22px;
+}
+
+.pay {
+    width: 386.97px;
+    height: 40.33px;
+    padding: 21px 10.46px 0px 19.78px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.30594px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.pay-title {
+    color: #5D5D5B;
+    margin-right: 54.28px;
+}
+
+.bitcoin-foto {
+    margin-right: 6.2px;
+}
+
+.bitcoin-arrow {
+    margin-left: 215px;
+}
+
+.line {
+    padding-left: 19.78px;
+}
+
+.contact {
+    padding-left: 19.78px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #5D5D5B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.30594px;
+    margin-right: 57.28px;
+}
+
+.contact input {
+    border: none;
+    margin: 0px;
+    background-color: #F5F9FE;
+}
+
+.contact ::placeholder  {
+    color:#000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.8569px;
+}
+
+.note {
+    display: flex;
+    padding-left: 19.78px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.note p {
+    color: #5D5D5B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.30594px;
+    margin-right: 70.28px;
+}
+
+.note input {
+    border: none;
+    background-color: #F5F9FE;
+}
+
+.note ::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.8569px;
+    
+} 
+
+.calc-button {
+    padding-left: 117.5px;
+    margin-top: 22.78px;
+   
+}
+
+.calc-button .launch-button {
+    width: 222px;
+    height: 41px;
+    border-radius: 6.20396px;
+}
+
+@media only screen and (max-width: 728px) {
+    .home-block .container { 
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .title-block {
+        text-align: center;
+    }
+    .calculator-block {
+        margin-bottom: 0px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .home-document {
+        padding-left: 170px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .home-block .container {
+        width: 320px;
+        flex-direction: column;
+        height: 874px;
+    }
+    .title-block {
+        height: 236px;
+        width: 288px;
+        padding-top: 32px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .title-block .launch-button {
+        width: 137px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    .home-document {
+        width: 239px;
+        height: 20px;
+        padding-left: 24.5px;
+        margin-top: 24px;
+    }
+    .home-document img {
+        width: 20px;
+        height: 20px;
+    }
+    .calculator-block {
+        width: 480.06px;
+        height: 534px;
+        background-size: cover;
+        
+    }
+    .calculator-box {
+        width: 288px;
+        height: 362px;
+    }
+    .calc-intro {
+        width: 133.77px;
+        height: 27.92px;
+        padding-left: 77px;
+        font-size: 9.30594px;
+    }
+    .yan {
+        width: 65.14px;
+        height: 27.92px;
+        margin-right: 32.18px;
+    }
+    .calс-price-part {
+        height: 40px;
+        width: 143px;
+        padding-right: 10.12px;
+    }
+    .calc-numbers {
+        width: 57px;
+        height: 13px;
+    }
+    .dollar {
+        font-size: 32.7442px;
+    }
+    .under-dollar {
+        width: 57px;
+        height: 13px;
+        font-size: 8.18605px;
+    }
+    .form {
+        width: 267px;
+        height: 143px;
+        margin: 0px 11px 0px 10px;
+    }
+    .line {
+        width: 235px;
+    }
+    .calc-button {
+        width: 267px;
+        height: 41px;
+    }
+}
+
+.main-end {
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 24px 24px 24px;
+   margin-top: 47px;
+   
+}
+
+.main-scroll-part {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.main-end-img-block {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-right: 16px;
+}
+
+.social-media-block {
+    display: flex;
+    width: 310px;
+    height: 40px;
+    align-items: center;
+    padding-right: 24px;
+}
+
+.social-media-block p {
+    color: #6F767E;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    margin-left: 16px;
+}
+
+.icon-image {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+@media only screen and (max-width: 728px) {
+    .main-end {
+        width: 728px;
+        height: 40px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-end {
+        display: none;
+    }
+}
+
+
+.info-block {
+    width: 1440px;
+}
+
+.info-block .container {
+    padding-top: 120px;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+}
+
+.subtitle-block {
+    width: 554px;
+    height: 168px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+}
+
+.info-text-block {
+    width: 496px;
+    height: 192px;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+    padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 728px) {
+    .info-block {
+        width: 728px;
+    }
+    .info-block .container {
+        margin: 0px 24px 0px 24px;
+        display: block;
+        height: 392px;
+        padding-bottom: 80px;
+    }
+    .info-text-block {
+        margin-top: 32px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .info-block {
+        width: 320px;
+    }
+    .info-block .container {
+        width: 288px;
+        height: 361px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .subtitle-block {
+        width: 288px;
+        height: 96px;
+        font-size: 24px;
+        margin-bottom: 16px;
+        line-height: 32px;
+    }
+    .info-text-block {
+        width: 100%;
+        height: 216px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.steps-block {
+    width: 1440px;
+}
+
+.steps-block .container {
+    padding-top: 120px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.steps-intro-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.for-changing {
+    display: none;
+}
+
+.steps-text-block {
+    width: 452px;
+    height: 112px;
+    color: 000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: 'TT Firs Neue Trial Var Italic', sans-serif;
+    margin-bottom: 48px;
+}
+
+.steps-intro-block .button {
+    width: 169;
+    height: 56px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.instructions-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.box {
+    width: 392px;
+    height: 424px;
+}
+
+.box-picture-part {
+    width: 100%;
+    height: 240px;
+    background-color: #F5F9FE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-step-block {
+    width: 74px;
+    height: 32px;
+    background: #DFD3F7;
+    border-radius: 24px;
+    margin-top: 24px;
+}
+
+.two {
+    background: #C0E1EE; 
+}
+
+.three {
+    background-color: #D0E5C2;
+}
+
+.number-step-block p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    padding-top: 6px;
+}
+
+.to-do-block {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    width: 392px;
+    height: 32px;
+}
+
+.benefit-block {
+    margin-top: 24px;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.icons-block {
+    width: 144px;
+    height: 64px;
+    background-color: #FFFFFF;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.second {
+    background: #F5F9FE;
+}
+
+.third {
+    width: 88px;
+    height: 88px;
+    border-radius: 64px;
+    display: block;
+    position: relative;
+}
+
+.checked {
+    position: absolute;
+    left: 25px;
+    bottom: 20px
+}
+
+.mini-green-arrow {
+    position: absolute;
+    bottom: 30px;
+    transform: rotate(8deg);
+}
+
+.mini-blue-arrow {
+    position: absolute;
+    top: 80px;
+    right: 1px;
+    transform: rotate(6deg);
+}
+
+
+@media only screen and (max-width: 728px) {
+    .steps-block {
+        width: 728px;
+    }
+    .steps-block .container {
+        margin: 0px 23.5px;
+        width: 681px;
+    }
+    .instructions-block {
+        flex-flow: row wrap;
+        row-gap: 64px;
+    }
+    .steps-intro-block {
+        display: none;
+    }
+    .for-changing {
+        display: block;
+    }
+    .for-changing .launch-button{
+        margin-top: 32px;
+    }
+    .steps-text-block {
+        width: 328px;
+    }
+    .box {
+        width: 328px;
+        height: 408px;
+    }
+    .box-picture-part {
+        width: 328px;
+        height: 200px;
+    }
+    .to-do-block {
+        width: 326px;
+        height: 32px;
+        font-size: 24px;
+    }
+    .benefit-block {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .steps-block {
+        width: 320px;
+    }
+    .steps-block .container {
+        width: 288px;
+        padding-top: 32px;
+        margin: 0px 16px;
+    }
+    .steps-text-block {
+        width: 224px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .instructions-block {
+        width: 288px;
+    }
+    .box {
+        width: 288px;
+        height: 352px;
+    }
+    .box-picture-part {
+        height: 176px;
+        width: 288px;
+    }
+    .number-step-block {
+        width: 69px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .to-do-block { 
+        font-size: 20px;
+    }
+    .benefit-block {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+.world-block {
+    width: 1440px;
+}
+
+.world-block .container {
+    padding: 120px 0px;
+    background-image: url(../images/map.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.country-block {
+    width: 157px;
+    background-color: #F5F9FE;
+    border-radius: 16px;
+}
+
+.each-country {
+    padding: 4px 24px;
+    display: flex;
+    height: 40px;
+    width: 141px;
+    align-items: center;
+    display: flex;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.each-country img {
+    margin-right: 8px;
+}
+
+.world-block-title {
+    margin-top: 64px;
+    width: 452px;
+    height: 168px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    padding-bottom: 120px;
+}
+
+.world-block-buttons {
+    margin-top: 32px;
+    width: 423px;
+    height: 56px;
+    display: flex;
+    padding-bottom: 120px;
+}
+
+.world-block-buttons .launch-button {
+    width: 148px;
+    height: 56px;
+    margin-right: 16px;
+}
+
+.world-block-buttons .button {
+    width: 259px;
+    height: 56px;
+    background: #F5F9FE;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 728px) {
+    .world-block {
+        width: 728px;
+        margin-top: 80px;
+
+    }
+    .world-block .container {
+        width: 680px;
+        margin: 0px 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-size: contain;
+        padding-top: 0;
+    }
+    .country-block {
+        display: flex;
+        width: 680px;
+    
+    }
+    .world-block-title {
+        width: 503px;
+        height: 200px;
+        margin-top: 0;
+        padding-bottom: 0;
+        font-size: 48px;
+        margin-bottom: 471px;
+    }
+    .world-block-buttons {
+        width: 423px;
+        height: 56px;
+        margin-top: 32px;
+    }
+    .world-block-buttons .launch-button {
+        width: 148px;
+        height: 56px;
+        font-size: 18px;
+    }
+   
+}
+
+@media only screen and (max-width: 320px) {
+    .world-block {
+        width: 320px;
+        margin-top: 32px;
+    }
+    .world-block .container {
+        width: 100%;
+    }
+    .world-block-title {
+        width: 288px;
+        height: 200px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-right: 16px;
+    }
+    .world-block-buttons {
+        width: 288px;
+        height: 112px;
+        display: block;
+        margin-top: 24px;
+    }
+    .world-block-buttons .launch-button {
+        width: 288px;
+        height: 48px;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .world-block-buttons .button {
+        width: 288px;
+        height: 48px;
+        font-size: 16px;
+    }
+}
+
+.faq-block {
+    width: 1440px;
+    padding-bottom: 120px;
+}
+
+.faq-block .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.faq-part {
+    width: 392px;
+    height: 136px;
+    margin-right: 24px;
+}
+
+.faq-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    width: 392px;
+    height: 56px;
+    width: 392px;
+    height: 56px;
+}
+
+.faq-text {
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.question-part {
+    width: 808px;
+    height: 824px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.ques-parag-block-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.ques-parag-block-text {
+    margin-top: 24px;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    padding: 24px;
+}
+
+.question {
+    border-top: 1px solid #D9D9D9;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.question img {
+    width: 24px;
+    height: 24px;
+}
+
+.q-last {
+    border-bottom: 1px solid #D9D9D9;
+}
+
+@media only screen and (max-width: 728px) {
+    .faq-block {
+        width: 728px;
+    }
+    .faq-block .container {
+        width: 680px;
+        margin: 0px 24px;
+        height: 1056px;
+        display: block;
+    }
+    .faq-part {
+       width: 680px;
+       display: flex;
+       justify-content: space-between;
+    }
+    .question-part {
+        width: 680px;
+    }
+   
+}
+
+@media only screen and (max-width: 320px) { 
+    .faq-block {
+        width: 320px;
+        height: 1128px;
+    }
+    .faq-block .container {
+        width: 320px;
+        padding-top: 32px;
+
+    }
+    .faq-part {
+        height: 88px;
+        display: block;
+        margin-bottom: 24px;
+        width: 320px;
+    }
+    .faq-title  {
+        height: 32px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .faq-text {
+        height: 40px;
+    }
+    .question-part {
+        width: 320px;
+
+    }
+    .ques-parag-block-title {
+        width: 272px;
+        height: 24px;
+        font-size: 16px;
+    }
+    .ques-parag-block-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .question {
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+.last-container {
+    margin-top: 76px;
+    background-color: #F5F9FE;
+    display: flex;
+}
+
+.last-container-image {
+    width: 515px;
+    height: 596px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/backgraund.png);
+    background-position: top;
+}
+
+.last-green-coin {
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 199px;
+    width: 155px;
+    height: 148px;
+}
+
+
+.last-info-block {
+    padding-left: 108px;
+    padding-top: 96px;
+    width: 545px;
+    height: 328px;
+    margin-right: 58px;
+}
+
+.last-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.last-subtitle {
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+
+@media only screen and (max-width: 728px) {
+    .last-container {
+        width: 728px;
+        margin-top: 0;
+        display: block;
+        text-align: center;
+    }
+    .last-info-block {
+        margin-bottom: 64px;
+    }
+    .last-container-image {
+        margin-left: 136px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .last-section {
+        width: 320px;
+        padding-top: 32px;
+    }
+    .last-container {
+        width: 320px;
+        display: block;
+    }
+    .last-info-block {
+        width: 320px;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 32px;
+        margin-bottom: 32px;
+    }
+    .last-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    .last-subtitle {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .last-info-block .launch-button {
+        width: 137px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .last-container-image {
+        width: 320px;
+    }
+    .last-container-image img {
+        width: 288px;
+    }
+    .last-green-coin {
+        width: 90.03px;
+        height: 83.33px;
+    }
+}
+
+
+footer {
+    margin-top: 64px;
+    padding-bottom: 120px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.copy-text {
+    margin-right: 440px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6F767E;
+    width: 81px;
+}
+
+.terms-and-cond {
+    display: flex;
+    width: 186px;
+    justify-content: space-between;
+    color: #6F767E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 212px;
+}
+
+@media only screen and (max-width: 728px) {
+    footer {
+        margin-top: 32px;
+    }
+    footer .container {
+        width: 728px;
+        padding: 0px 24px;
+        font-size: 12px;
+    } 
+    .copy-text {
+        width: 81px;
+        height: 16px;
+        margin-right: 24px;
+    }
+    .terms-and-cond {
+        width: 186px;
+        height: 16px;
+        margin-right: 79px;
+    }
+}
